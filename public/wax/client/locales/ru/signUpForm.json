@@ -1,0 +1,23 @@
+{
+  "SIGNUP": "Регистрация",
+  "FIRSTNAME": "Имя",
+  "LASTNAME": "Фамилия",
+  "MIDDLENAME": "Отчество",
+  "LOGIN": "Логин",
+  "NID": "№ документа, удостоверяющего личность",
+  "IDENTITY": "Документ, удостоверяющий личность",
+  "COUNTRY": "Страна",
+  "CITY": "Город",
+  "RESEARCH": "Вид исследования",
+  "ADDRESS": "Домашний адрес",
+  "PHONE": "Телефон",
+  "LOADING...": "Загрузка...",
+  "FIRST_NAME_PLACEHOLDER": "Иван",
+  "LAST_NAME_PLACEHOLDER": "Иванов",
+  "MIDDLE_NAME_PLACEHOLDER": "Иванович",
+  "COUNTRY_PLACEHOLDER": "Казахстан",
+  "CITY_PLACEHOLDER": "Астана",
+  "RESEARCH_TYPE": "Вид исследования",
+  "HAS_LOGIN": "Есть ли у вас логин?",
+  "ENTER": "Войти"
+}

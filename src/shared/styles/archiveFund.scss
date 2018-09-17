@@ -1,0 +1,868 @@
+//AntTable overwrites
+
+.ant-tabs-nav-wrap {
+  padding-left: 20px;
+
+  .ant-tabs-tab {
+    margin-right: 7px!important;
+  }
+}
+
+.ant-form-item-label {
+  padding-right: 4px;
+}
+
+.antForm-spaceBetween .ant-form-item-label {
+  text-align: left;
+  font-weight: 600;
+}
+.ant-form-item-label label {
+  position: unset;
+
+  &:after {
+    position: absolute;
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 12px;
+    color: #f5222d;
+    right: 5px;
+    top: -3px;
+  }
+}
+
+.ant-table-title {
+  top: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.ant-tabs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  &-content {
+    flex: 1;
+  }
+
+  &-content-no-animated {
+    height: calc( 100% - 50px );
+  }
+
+  &-tabpane {
+    height: 100%;
+  }
+}
+
+.ant-table-wrapper {
+  height: 100%;
+  min-height: 250px;
+
+  .ant-spin-nested-loading {
+    height: 100%;
+  }
+
+  .ant-spin-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ant-table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-content {
+    height: 100%;
+  }
+
+  &-body {
+    flex: 1;
+  }
+
+  &-scroll {
+    height: 100%;
+    overflow: hidden!important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .label {
+      display: flex;
+
+      input {
+        margin-left: 8px;
+        flex-basis: 80px;
+      }
+    }
+  }
+
+  .row-selected {
+    background-color: #e0f2f1;
+    cursor: pointer;
+    color: #009688
+  }
+  .ant-table-thead {
+    th {
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+
+  .ant-table-tbody {
+    td {
+      padding: 8px;
+    }
+    & > tr:hover > td {
+      background: #e0f2f1;
+    }
+  }
+}
+
+.ant-tabs-ink-bar {
+    background-color: #009688;
+}
+
+.ant-input-group-addon {
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    color: #108ee9;
+  }
+}
+
+.ant-table-small {
+  .ant-table-thead {
+    table {
+      background-color: #f3f3f3;
+    }
+    th {
+      font-weight: 600;
+      background-color: #f3f3f3;
+    }
+  }
+}
+
+.ant-form-item-control .ant-calendar-picker {
+  width: 100%;
+}
+
+.ant-form-item.with-lang .ant-form-item-control {
+  display: flex;
+  flex-wrap: wrap;
+
+  .ant-input {
+    flex-basis: 75%;
+  }
+
+  .ant-radio-group {
+    flex-basis: 25%;
+    text-align: right;
+  }
+  .ant-radio-button-wrapper {
+    padding: 0 6px;
+  }
+}
+
+//////////////////DialogBox//////////////////////////
+
+@keyframes animateRight{
+  from {
+    right:-600px;
+    opacity:0;
+  }
+  to {
+    right:0;
+    opacity:1;
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateRight .4s;
+}
+
+.modal-table-header {
+  button {
+    margin-right: 5px;
+  }
+}
+
+//////////////////DialogBox//////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.archiveFund {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+
+  .ant-table-wrapper th span {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      margin-right: 30px;
+    }
+  }
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  align-items: center;
+
+  & h3 {
+    flex: 1;
+  }
+
+  &__btns button {
+    margin-right: 10px;
+  }
+}
+
+///////////////////////////////fundList//////////////////////////////////////
+
+.fundsList {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    background-color: #e6e6e6;
+
+    &-buttons {
+      flex: 0 0 50%;
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+
+      button {
+        margin-right: 5px;
+      }
+    }
+
+    .ant-input-search {
+      flex: 0 0 30%;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    overflow: hidden;
+
+    & .row-selected {
+      background-color: #dbecfd;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+/////////////////////////////MovementsRecord/////////////////////////////////
+
+.movementsRecord {
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f4f4f4;
+
+    &-buttons {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &-checkboxes {
+      display: flex;
+      flex: 0 0 20%;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+    .ant-input-search {
+      flex: 0 0 30%;
+    }
+  }
+
+  &__body {
+    //margin-top: 15px;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.EditFundCardPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 12px;
+    margin-top: 5px;
+
+    a {
+      color: #009688;
+
+      &:hover {
+        color: #4db6ac;
+      }
+    }
+  }
+
+  form {
+    padding: 8px 0;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .editCard {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      margin-right: 6px;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.EditCardFundMaker {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  height: 100%;
+
+  &__list {
+    flex: 0 0 29.5%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-right: 10px;
+
+    & h3 {
+      padding: 8px 15px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  &__versions {
+    flex: 0 0 69.5%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    & h3 {
+      padding: 8px 15px;
+      background-color: #e6e6e6;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.EditCardAnnotations {
+
+  height: 100%;
+
+  &__body {
+
+    height: 100%;
+    overflow: auto;
+
+    h3 {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    textarea {
+      resize: none;
+      width: 90%;
+      height: 300px;
+    }
+
+    input[type='text'] {
+      width: 90%;
+    }
+  }
+
+  &__footer {
+    margin: 20px;
+    text-align: right;
+
+    & button {
+      margin-right: 10px;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.EditCardFundsize {
+
+  height: 100%;
+  overflow: auto;
+
+  &__table {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &__data {
+    margin-top: 20px;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px;
+
+      & label {
+        flex: 0 0 60%;
+        font-size: 16px;
+      }
+
+      & input {
+        flex: 0 0 25%;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.EditCardChangesFixingActs {
+
+  height: 100%;
+  overflow: auto;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f4f4f4;
+
+    &-buttons {
+      flex: 0 0 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-checkboxes {
+      display: flex;
+      flex: 0 0 30%;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+  }
+
+  &__body {
+    //margin-top: 15px;
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+.EditCardInventories {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .table-header {
+    justify-content: flex-start;
+    padding: 3px;
+
+    button {
+      margin-right: 5px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f4f4f4;
+
+    &-buttons {
+      flex: 0 0 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-checkboxes {
+      display: flex;
+      flex: 0 0 30%;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+    .ant-input-search {
+      flex: 0 0 30%;
+    }
+  }
+
+  &__body {
+    //margin-top: 15px;
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+.ViewInventCardPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 12px;
+    margin-top: 5px;
+
+    a {
+      color: #009688;
+
+      &:hover {
+        color: #4db6ac;
+      }
+    }
+  }
+}
+
+#ViewInventCardMainForm {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  padding: 8px 0;
+
+  .general-form {
+    flex: 0 0 600px;
+  }
+
+  .image-viewer {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    padding: 0 20px;
+
+      &-list {
+        flex: 0 0 300px;
+      }
+
+      &-show {
+        flex: 1;
+        background-color: #45515B;
+        text-align: center;
+      }
+  }
+}
+
+@media (max-width: 1300px) {
+  #ViewInventCardMainForm {
+
+    .image-viewer {
+
+      flex-direction: column;
+
+      &-list {
+        flex: 0 0 200px;
+
+        .ant-form-item-control {
+          max-height: 180px;
+          overflow-x: auto;
+        }
+      }
+
+      &-show {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+.ViewInventCardCases {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .table-header {
+    justify-content: flex-start;
+    padding: 3px;
+
+    button {
+      margin-right: 5px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f4f4f4;
+
+    &-buttons {
+      flex: 0 0 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-checkboxes {
+      display: flex;
+      flex: 0 0 30%;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+    .ant-input-search {
+      flex: 0 0 30%;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    overflow: auto;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+.ViewInventCardSize {
+
+  height: 100%;
+  overflow: auto;
+
+  &__table {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &__data {
+    margin-top: 20px;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px;
+
+      & label {
+        flex: 0 0 60%;
+        font-size: 16px;
+      }
+
+      & input {
+        flex: 0 0 25%;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+#ViewInventCardStorage {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  overflow: auto;
+}
+
+.viewInventCardStorage {
+
+  &__display {
+    flex-basis: 60%;
+    border: 3px solid #898989;
+  }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+.ViewCardCases {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .ant-form {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .checkbox-input .ant-input {
+    width: auto;
+  }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ViewCardCasesDocumentsList {
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f4f4f4;
+
+    &-buttons {
+      flex: 0 0 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-checkboxes {
+      display: flex;
+      flex: 0 0 30%;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+    .ant-input-search {
+      flex: 0 0 30%;
+    }
+  }
+
+  &__body {
+    //margin-top: 15px;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+.viewCardCasesTheCase {
+  display: flex;
+
+  &__nav {
+    flex: 0 0 250px;
+    padding-right: 10px;
+    & aside {
+      height: 100%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+    }
+
+    &__header {
+      background-color: #f1f1f1;
+      padding: 5px;
+    }
+  }
+
+  &__viewer {
+    flex: 1;
+
+    & iframe {
+      width: 100%;
+      height: 600px;
+    }
+  }
+}
+
+/////////////////////////////ArchiveDocsReceiving//////////////////////////
+
+.ArchiveDocsReceiving {
+  height: 100%;
+  overflow-y: auto;
+
+  h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .table-header {
+    background-color: unset;
+
+    .label-select {
+      .ant-calendar-picker {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .ant-table-wrapper {
+    height: auto;
+
+    .ant-table-title {
+      background-color: #eee;
+    }
+  }
+}
+
+/////////////////////////////ArchiveDocsReceiving//////////////////////////
+/////////////////////////////ArchiveFundWorks//////////////////////////
+
+.WorksChecking {
+  height: 100%;
+
+  .table-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      margin-left: 8px;
+    }
+  }
+;
+}
+
+/////////////////////////////ArchiveFundWorks//////////////////////////
+

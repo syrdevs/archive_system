@@ -1,0 +1,23 @@
+{
+  "SIGNUP": "Sign up",
+  "FIRSTNAME": "First name",
+  "LASTNAME": "Last name",
+  "MIDDLENAME": "Patronymic",
+  "LOGIN": "Login",
+  "NID": "Identity document",
+  "IDENTITY": "Identity document",
+  "COUNTRY": "Country",
+  "CITY": "City",
+  "RESEARCH": "Research",
+  "ADDRESS": "Home address",
+  "PHONE": "Phone",
+  "LOADING...": "Loading...",
+  "FIRST_NAME_PLACEHOLDER": "John",
+  "LAST_NAME_PLACEHOLDER": "Doe",
+  "MIDDLE_NAME_PLACEHOLDER": "",
+  "COUNTRY_PLACEHOLDER": "Kazakhstan",
+  "CITY_PLACEHOLDER": "Astana",
+  "RESEARCH_TYPE": "Research type",
+  "HAS_LOGIN": "Already signed up?",
+  "ENTER": "Sign in"
+}

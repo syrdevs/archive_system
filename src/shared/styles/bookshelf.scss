@@ -1,0 +1,214 @@
+@import '../../shared/styles/shared.scss';
+
+
+.bookshelf {
+  background: url('https://static.tumblr.com/8x9m588/C8ho55ylx/bg-wood2.png'), linear-gradient(#333 263px,#45515B 270px);
+  min-height: 700px;
+  background-size: 270px;
+  background-position-y: 160px;
+  margin-top: 50px;
+  border: 10px solid #45515B;
+  width: calc(#{$bk-list-width} + 20px); /*Book-list-width + 20px from borders*/
+  position: relative;
+}
+.bookshelf::before {
+  top: 58%;
+  position: absolute;
+  content: "";
+  width: 600px;
+  border-bottom: 30px solid rgba(69, 81, 91, 0.9);
+  border-left: 20px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.bookshelf::after {
+  top: 95%;
+  position: absolute;
+  content: "";
+  width: 600px;
+  border-bottom: 35px solid rgba(69, 81, 91, 0.9);
+  border-left: 20px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.bookshelf .title {
+  height: 152px;
+  overflow: hidden;
+  font-size: 46px;
+  text-align: center;
+  color: #d1d1d1;
+}
+
+.bookshelf .desc {
+  margin-top: 10px;
+  height: 250px;
+  padding: 15px;
+  font-size:16px;
+  overflow: hidden;
+  color: #d1d1d1;
+}
+
+.bookshelf .bk-list {
+  list-style: none;
+  position: relative;
+  width: $bk-list-width; /* 10 books * 40px + 10 books * margin (20px) */
+  margin-top: 10px;
+  -webkit-perspective: 1800px;
+  perspective: 1800px;
+  -webkit-perspective-origin: 50% 40%;
+  perspective-origin: 50% 15%;
+  z-index: 1;
+}
+
+.bookshelf .bk-list li {
+  position: relative;
+  width: 40px;
+  height: 260px;
+  float: left;
+  margin: 0 $book-margin 0 $book-margin; /*space between books initial: 0 0 0 1px*/
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.bk-book {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 260px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -webkit-transform: rotate3d(0,1,0,90deg);
+  transform: rotate3d(0,1,0,90.1deg);
+}
+
+.bk-book:hover {
+  -webkit-transform: rotateY(90deg) rotateZ(-3deg) translate3d(-100px,0,0);
+  transform: rotateY(85deg) rotateZ(-3deg) translate3d(-150px,0,0);
+} /* here goes the magic!*/
+
+.bk-book > div {
+  display: block;
+  position: absolute;
+}
+
+.bk-book .bk-back,
+.bk-book .bk-front {
+  width: 300px;
+  height: 260px;
+  z-index: 1;
+}
+
+.bk-front {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 10% 50%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: transform .5s;
+  -webkit-transform: translate3d(0,0,20px);
+  transform: translate3d(0,0,20px);
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.bk-front p {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #333;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+
+.bk-left{
+  width: $book-spine;
+  background-color: #d5d5d5;
+  left: -20px;
+  height: 260px;
+  -webkit-transform: rotate3d(0,1,0,-90deg);
+  transform: rotate3d(0,1,0,-90deg);
+  box-shadow:
+          inset 4px 0 5px rgba(255,255,255,0.1),
+          inset 5px 0 5px rgba(0,0,0,0.05),
+          inset -5px 0 5px rgba(0,0,0,0.04);;
+}
+
+.bk-left p {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #333;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  width: 260px;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(90deg) translateY(-40px);
+  transform: rotate(90deg) translateY(-40px);
+}
+
+.bk-back {
+  -webkit-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,20px);
+  transform: rotate3d(0,1,0,-180deg) translate3d(0,0,20px);
+  border-radius: 3px 0 0 3px;
+  background-color: #e5e5e5;
+}
+
+.bk-top {
+  width: 295px;
+  height: 40px;
+  top: -10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(1,0,0,90deg);
+  transform: rotate3d(1,0,0,90deg);
+  background-color: #f1f1f1;
+}
+
+.sider {
+  height:100%;
+  width: 320px;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#2a2a2a;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.sider:after {
+  content: '';
+  background: url('../assets/img/bg-woodCroped.png'), #45515B;
+  background-size: 90px;
+  background-position-y: 2px;
+  width: 100%;
+  height: calc(#{$bk-list-width} + 20px); /*Book-list-width + 20px from borders*/
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.sider .bk-list {
+  list-style: none;
+  position: relative;
+  width: $bk-list-width; /* 10 books * 40px + 10 books * margin (20px) */
+  margin-top: 10px;
+  transform: rotateZ(-90deg);
+  transform-origin: 52% 110%;
+  z-index: 1;
+}
+
+.sider li {
+  position: relative;
+  width: 40px;
+  height: 260px;
+  float: left;
+  margin: 0 $book-margin 0 $book-margin; /*space between books initial: 0 0 0 1px*/
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}

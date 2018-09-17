@@ -1,0 +1,23 @@
+{
+  "SIGNUP": "Тіркелу",
+  "FIRSTNAME": "Есіміңіз",
+  "LASTNAME": "Тегіңіз",
+  "MIDDLENAME": "Отчество",
+  "LOGIN": "Логин",
+  "NID": "№ документа, удостоверяющего личность",
+  "IDENTITY": "Документ, удостоверяющий личность",
+  "COUNTRY": "Ел",
+  "CITY": "Қала",
+  "RESEARCH": "Зерттеу түрі",
+  "ADDRESS": "Үй мекенжайы",
+  "PHONE": "Телефон нөмірі",
+  "LOADING...": "Жүктелуде...",
+  "FIRST_NAME_PLACEHOLDER": "Тәңірберген",
+  "LAST_NAME_PLACEHOLDER": "Оралов",
+  "MIDDLE_NAME_PLACEHOLDER": "Құдайбергенұлы",
+  "COUNTRY_PLACEHOLDER": "Қазақстан",
+  "CITY_PLACEHOLDER": "Астана",
+  "RESEARCH_TYPE": "Зерттеу түрі",
+  "HAS_LOGIN": "Логиніңіз бар ма?",
+  "ENTER": "Кіру"
+}

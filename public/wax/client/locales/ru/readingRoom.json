@@ -1,0 +1,18 @@
+{
+  "READING_ROOM": "Читальный зал",
+  "FUNDS": "Фонды",
+  "GUIDES": "Путеводители",
+  "GUIDE": "Путеводитель",
+  "CATALOGS": "Каталоги",
+  "POINTERS": "Указатели",
+  "OVERVIEWS": "Обзоры",
+  "INVENTORIES": "Описи",
+  "CASES": "Дела",
+  "FUNDNUMB": "№ фонда",
+  "TITLE": "Заголовок",
+  "FUNDANNOTATION": "Аннотация",
+  "DEADLINE": "Крайние даты",
+  "CHOOSECASES": "Выбрать дела",
+  "ARCHIVALCIPHER": "Архивный шифр",
+  "AMOUNT": "Объем ед.хр."
+}
